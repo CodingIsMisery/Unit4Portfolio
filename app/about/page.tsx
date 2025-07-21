@@ -39,7 +39,7 @@ export default function Home() {
           Computer Scientist · Risk Analyst · Developer
         </p>
         <p className="mt-3 max-w-xl mx-auto text-text-secondary text-base md:text-lg leading-relaxed">
-          I'm a driven computer science student with hands-on experience in cybersecurity,
+          I&apos;m a driven computer science student with hands-on experience in cybersecurity,
           risk analysis, and building full-stack applications that solve real problems.
           Always learning, always building, always improving.
         </p>

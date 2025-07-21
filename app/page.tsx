@@ -44,7 +44,7 @@ export default function Home() {
           Computer Scientist · Risk Analyst · Developer
         </p>
         <p className="mt-4 text-base md:text-lg text-gray-300 leading-relaxed max-w-2xl mx-auto">
-          I'm a driven computer science student with practical experience in threat detection,
+          I&apos;m a driven computer science student with practical experience in threat detection,
           risk management, and full-stack development. I build clean, scalable solutions—and I
           never stop learning.
         </p>
