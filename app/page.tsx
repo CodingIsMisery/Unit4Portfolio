@@ -263,12 +263,12 @@ const ProjectsSection = () => {
 const ContactSection = () => (
     <footer id="contact" className="py-16 px-4 border-t border-border">
         <div className="container mx-auto max-w-5xl text-center">
-            <h2 className="text-2xl md:text-3xl font-bold mb-4">Get In Touch</h2>
+            <h2 className="text-2xl md:text-3xl font-bold mb-4 bg-white">Get In Touch</h2>
             <p className="text-foreground/80 max-w-lg mx-auto mb-8">I&apos;m currently seeking new opportunities and am open to collaboration. Feel free to reach out.</p>
-            <a href="mailto:james.ford.dev@email.com" className="cosmic-button text-lg">Say Hello</a>
+            <a href="mailto:jamesford6666@gmail.com" className="cosmic-button text-lg">Say Hello</a>
             <div className="flex justify-center gap-6 mt-12">
-                <a href="#" className="text-foreground/60 hover:text-primary transition-colors"><GithubIcon /></a>
-                <a href="#" className="text-foreground/60 hover:text-primary transition-colors"><LinkedinIcon /></a>
+                <a href="https://github.com/CodingIsMisery" className="text-foreground/60 hover:text-primary transition-colors"><GithubIcon /></a>
+                <a href="https://www.linkedin.com/in/james-ford-2ab81b21a/" className="text-foreground/60 hover:text-primary transition-colors"><LinkedinIcon /></a>
             </div>
             <p className="text-sm text-foreground/50 mt-12">&copy; {new Date().getFullYear()} James Ford. All Rights Reserved.</p>
         </div>

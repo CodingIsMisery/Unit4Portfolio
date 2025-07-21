@@ -35,9 +35,6 @@ export default function Header() {
         <header className="sticky top-4 z-50 mx-auto max-w-5xl">
             <nav className="glass-card flex items-center justify-between p-2.5 rounded-xl">
                 <div className="flex-shrink-0">
-                    <Link href="/" className="text-white font-heading font-bold text-xl tracking-wider hover:text-accent-1 transition-colors duration-300 p-2">
-                        JF
-                    </Link>
                 </div>
                 <div className="hidden md:flex items-baseline space-x-2">
                     {navItems.map((item) => (

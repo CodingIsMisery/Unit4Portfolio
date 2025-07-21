@@ -51,8 +51,8 @@ export default function Home() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.4, duration: 0.6 }}
       >
-        <h1 className="text-4xl md:text-6xl font-heading font-extrabold text-white">
-          James Ford
+        <h1 className="text-4xl md:text-6xl font-heading font-extrabold text-blue-700 tracking-tight">
+          Hi, I&apos;m James,
         </h1>
         <p className="mt-4 text-lg md:text-2xl text-accent-1">
           Computer Scientist · Risk Analyst · Developer

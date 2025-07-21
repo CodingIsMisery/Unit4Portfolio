@@ -6,20 +6,19 @@ const projects = [
     title: 'Face Filters & Screen Injection Analysis',
     description: 'A cybersecurity research project where I reproduced advanced threat techniques to analyze their features and document vulnerabilities using Splunk and Python.',
     tags: ['Splunk', 'Git', 'Python', 'Threat Analysis', 'Windows'],
-    repoUrl: '#', // IMPORTANT: Add your GitHub link here
   },
   {
     title: 'Ebay All-In-One App',
     description: 'Developed a sophisticated C# application using Selenium and RestSharp to automate and enhance user engagement for listings on eBay, complete with a user-friendly CLI.',
     tags: ['C#', 'Selenium', 'RestSharp', 'JSON', 'API Integration'],
-    repoUrl: '#', // IMPORTANT: Add your GitHub link here
+     // IMPORTANT: Add your GitHub link here
   },
   {
     title: 'AI Resume Analyst Portfolio',
     description: 'This personal portfolio website. It was built with Next.js and features a custom AI assistant powered by the Google Gemini API to intelligently answer questions about my resume.',
-    tags: ['Next.js', 'React', 'TypeScript', 'Gemini API', 'Tailwind CSS'],
+    tags: ['Next.js', 'React', 'TypeScript', 'OpenAPI ChatGPT', 'Tailwind CSS'],
     liveUrl: '/',
-    repoUrl: '#', // IMPORTANT: Add your GitHub link here
+    repoUrl: 'https://github.com/CodingIsMisery/Portfolio-Summer', // IMPORTANT: Add your GitHub link here
   },
 ];
 

@@ -56,16 +56,16 @@
 @layer components {
   @reference "tailwindcss";
 
-  .cosmic-button {
-    @apply px-6 py-2 rounded-full font-medium transition-all duration-300;
-    background-color: var(--primary);
-    color: var(--primary-foreground);
-  }
+.cosmic-button {
+  @apply px-6 py-2 rounded-full font-medium transition-all duration-300 text-black bg-white border border-blue-700;
+}
 
-  .cosmic-button:hover {
-    box-shadow: 0 0 20px hsla(var(--primary-rgb), 0.5);
-    transform: scale(1.05);
-  }
+.cosmic-button:hover {
+  @apply shadow-lg;
+  transform: scale(1.05);
+}
+
+
 
   .cosmic-button:active {
     transform: scale(0.95);

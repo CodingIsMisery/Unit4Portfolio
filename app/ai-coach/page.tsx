@@ -64,7 +64,7 @@ Stay conversational and helpful, but also clear, confident, and informative. Eac
     <div className="max-w-3xl mx-auto slide-in-up">
       <h1 className="text-4xl font-bold text-center mb-4">AI Resume Analyst</h1>
       <p className="text-center text-[var(--text-secondary)] mb-8 text-black">
-        Ask a question about James Ford&apos;s resume, skills, or experience.
+        Ask a question about James&apos;s resume, skills, or experience.
       </p>
 
       <div className="bg-[var(--background-light)] border border-green-500/20 p-6 rounded-lg box-glow">
@@ -79,7 +79,7 @@ Stay conversational and helpful, but also clear, confident, and informative. Eac
           <button
             type="submit"
             disabled={isLoading}
-            className="w-full bg-[var(--accent-green)] text-black font-bold py-3 px-6 rounded-lg hover:bg-white transition-all duration-300 disabled:bg-gray-500 disabled:cursor-not-allowed button-glow"
+            className="w-full bg-[var(--accent-green)] text-blue-700 tracking-tight font-bold py-3 px-6 rounded-lg hover:bg-white transition-all duration-300 disabled:bg-gray-500 disabled:cursor-not-allowed button-glow"
           >
             {isLoading ? 'Analyzing...' : 'Ask Analyst'}
           </button>
