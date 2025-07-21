@@ -59,7 +59,7 @@ export default function Home() {
         </p>
 
         <ReadMore>
-          I'm a driven computer science student with solid hands-on experience in cybersecurity, risk analysis, and full-stack application development. My focus is on creating practical solutions that tackle real-world problems—always learning, building, and improving along the way.
+          I&apos;m a driven computer science student with solid hands-on experience in cybersecurity, risk analysis, and full-stack application development. My focus is on creating practical solutions that tackle real-world problems—always learning, building, and improving along the way.
         </ReadMore>
 
         <ReadMore>
@@ -67,7 +67,7 @@ export default function Home() {
         </ReadMore>
 
         <ReadMore>
-          I’m passionate about cybersecurity challenges and risk management, constantly diving into new tools and frameworks to stay ahead of industry trends. Whether working on a risk analysis internship or developing a fitness app with my team, I’m motivated by the impact thoughtful technology can have.
+          I&apos;m passionate about cybersecurity challenges and risk management, constantly diving into new tools and frameworks to stay ahead of industry trends. Whether working on a risk analysis internship or developing a fitness app with my team, I&apos;m motivated by the impact thoughtful technology can have.
         </ReadMore>
 
         <ReadMore>
