@@ -1,34 +1,48 @@
-import { GoogleGenerativeAI } from "@google/generative-ai";
+import { OpenAI } from 'openai';
 
-// This is the secure backend route. It's never exposed to the client.
-// It reads the API key from your environment variables.
-const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY!);
+const openai = new OpenAI({
+  apiKey: process.env.OPENAI_API_KEY, // Make sure it's set in Vercel environment variables
+});
 
 export async function POST(request: Request) {
-  // Get the user's prompt from the frontend request
   const { prompt } = await request.json();
 
   try {
-    // Get the generative model
-    const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
-    
-    // Generate content based on the prompt
-    const result = await model.generateContent(prompt);
-    const response = result.response;
-    const text = response.text();
+    const chatCompletion = await openai.chat.completions.create({
+      model: 'gpt-4', // or "gpt-3.5-turbo" if preferred
+      messages: [
+        {
+          role: 'system',
+          content: `
+You are James Ford's AI Resume and Portfolio Analyst.
 
-    // Send the AI's response back to the frontend
+James is a driven computer science student and risk analyst with hands-on experience in cybersecurity, data analysis, and full-stack development. He’s a National Cyber Scholarship Foundation Scholar and has worked with organizations like the NJ Department of the Treasury and Educational Testing Service.
+
+Help visitors understand his technical strengths, offer resume suggestions, explain projects in simple terms, and recommend how he can grow as a developer. Use a clear, human, and practical tone. Never lie, guess, or generate filler.
+        `.trim(),
+        },
+        {
+          role: 'user',
+          content: prompt,
+        },
+      ],
+      temperature: 0.65,
+    });
+
+    const text = chatCompletion.choices[0].message.content;
+
     return new Response(JSON.stringify({ text }), {
       status: 200,
       headers: { 'Content-Type': 'application/json' },
     });
-
   } catch (error) {
-    console.error("AI API Error:", error);
-    // Send a generic error message back to the frontend
-    return new Response(JSON.stringify({ error: "Failed to generate response from AI." }), {
-      status: 500,
-      headers: { 'Content-Type': 'application/json' },
-    });
+    console.error('ChatGPT API Error:', error);
+    return new Response(
+      JSON.stringify({ error: 'Failed to generate response from AI Coach.' }),
+      {
+        status: 500,
+        headers: { 'Content-Type': 'application/json' },
+      }
+    );
   }
 }
