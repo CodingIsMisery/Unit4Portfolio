@@ -1,0 +1,123 @@
+/* Modern Font Import - MUST BE THE FIRST LINE */
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&family=Inter:wght@400;500&display=swap');
+@import 'bootstrap/dist/css/bootstrap.min.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background-start-rgb: 24, 16, 48;  /* deep violet/navy blend */
+  --background-end-rgb: 15, 23, 42;    /* dark slate (cool tone) */
+  --accent-1: #a78bfa; /* soft purple (tailwind purple-400) */
+  --accent-2: #7c3aed; /* stronger purple (tailwind purple-600) */
+  --glass-color: rgba(45, 34, 74, 0.4); /* translucent purple glass */
+  --border-color: rgba(167, 139, 250, 0.2); /* matches accent-1 with soft opacity */
+  --text-primary: #f8fafc;   /* slate-50 */
+  --text-secondary: #cbd5e1; /* slate-300 */
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  color: var(--text-primary);
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+
+/* Hide default scrollbar for horizontal sections */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+@layer utilities {
+  /* Aurora Background Glow - Now in purple tones */
+  .aurora-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background:
+      radial-gradient(ellipse at 20% 20%, rgba(167, 139, 250, 0.15) 0%, transparent 70%),
+      radial-gradient(ellipse at 80% 30%, rgba(124, 58, 237, 0.08) 0%, transparent 70%),
+      radial-gradient(ellipse at 60% 80%, rgba(167, 139, 250, 0.1) 0%, transparent 70%);
+    animation: aurora 20s infinite linear;
+  }
+
+  @keyframes aurora {
+    0%   { background-position: 0% 50%, 0% 50%, 0% 50%; }
+    50%  { background-position: 100% 50%, 100% 50%, 100% 50%; }
+    100% { background-position: 0% 50%, 0% 50%, 0% 50%; }
+  }
+
+  /* Glass Card Style - Purples aligned */
+  .glass-card {
+    background: var(--glass-color);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid var(--border-color);
+    border-radius: 1rem;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+  }
+
+  .glass-card:hover {
+    border-color: rgba(167, 139, 250, 0.4);
+    transform: translateY(-4px);
+  }
+
+  /* Font Utilities */
+  .font-heading {
+    font-family: 'Sora', sans-serif;
+  }
+
+  .font-body {
+    font-family: 'Inter', sans-serif;
+  }
+
+  /* Accent Utilities */
+  .text-accent {
+    color: var(--accent-1);
+  }
+
+  .bg-accent {
+    background-color: var(--accent-1);
+  }
+
+  .hover-accent:hover {
+    background-color: var(--accent-2);
+    color: white;
+  }
+
+  /* Simple Animations */
+  .fade-in {
+    animation: fadeIn 1s ease-in-out forwards;
+  }
+
+  .slide-in-up {
+    animation: slideInUp 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+    opacity: 0;
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+  }
+
+  @keyframes slideInUp {
+    from { opacity: 0; transform: translateY(40px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+}
