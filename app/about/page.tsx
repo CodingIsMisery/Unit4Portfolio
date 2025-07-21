@@ -6,7 +6,7 @@ import ModernButton from '../../components/ModernButton';
 
 export default function Home() {
   return (
-    <main className="flex flex-col items-center justify-center min-h-[calc(100vh-12rem)] px-4 text-center">
+    <main className="flex flex-col items-center justify-center min-h-[calc(100vh-12rem)] px-4 text-center max-w-4xl mx-auto">
       {/* Profile Image Holder */}
       <motion.div
         initial={{ opacity: 0, scale: 0.95 }}
@@ -27,7 +27,7 @@ export default function Home() {
       </motion.div>
 
       <motion.section
-        className="mt-8"
+        className="mt-8 px-4"
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.4, duration: 0.6 }}
@@ -38,10 +38,21 @@ export default function Home() {
         <p className="mt-4 text-lg md:text-2xl text-accent-1">
           Computer Scientist · Risk Analyst · Developer
         </p>
+
         <p className="mt-3 max-w-xl mx-auto text-text-secondary text-base md:text-lg leading-relaxed">
-          I&apos;m a driven computer science student with hands-on experience in cybersecurity,
-          risk analysis, and building full-stack applications that solve real problems.
-          Always learning, always building, always improving.
+          I'm a driven computer science student with solid hands-on experience in cybersecurity, risk analysis, and full-stack application development. My focus is on creating practical solutions that tackle real-world problems—always learning, building, and improving along the way.
+        </p>
+
+        <p className="mt-6 max-w-xl mx-auto text-text-secondary text-base md:text-lg leading-relaxed">
+          Balancing technical expertise with leadership, I serve as a Resident Assistant at Kean University, where I foster community, mentor residents, and keep detailed notes on their progress and interests. This role has sharpened my communication skills and ability to stay organized under pressure.
+        </p>
+
+        <p className="mt-4 max-w-xl mx-auto text-text-secondary text-base md:text-lg leading-relaxed">
+          I’m passionate about cybersecurity challenges and risk management, constantly diving into new tools and frameworks to stay ahead of industry trends. Whether working on a risk analysis internship or developing a fitness app with my team, I’m motivated by the impact thoughtful technology can have.
+        </p>
+
+        <p className="mt-4 max-w-xl mx-auto text-text-secondary text-base md:text-lg leading-relaxed">
+          Outside of tech, I enjoy hiking local trails, experimenting with the latest gadgets, and exploring topics in psychology and leadership. These interests fuel my growth mindset and inspire me to approach problems creatively and collaboratively.
         </p>
 
         <div className="mt-10 flex flex-col sm:flex-row justify-center gap-4">
