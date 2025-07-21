@@ -48,7 +48,7 @@ export default function AICoach() {
       User's Question: "${prompt}"
     `;
     // =================================================================
-    // ================== END OF THE AI'S BRAIN ========================
+    // ================== END OF THE AIS BRAIN ========================
     // =================================================================
 
     try {
@@ -103,7 +103,7 @@ export default function AICoach() {
 
       {aiResponse && (
         <div className="mt-6 p-6 bg-[var(--background-light)] border border-green-500/20 rounded-lg box-glow">
-          <h2 className="text-xl font-semibold text-[var(--accent-green)] mb-2 text-glow">Analyst's Response:</h2>
+          <h2 className="text-xl font-semibold text-[var(--accent-green)] mb-2 text-glow">Analysts Response:</h2>
           <p className="text-[var(--text-primary)] whitespace-pre-wrap leading-relaxed">{aiResponse}</p>
         </div>
       )}
