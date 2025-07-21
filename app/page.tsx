@@ -65,9 +65,9 @@ export default function Home() {
         </div>
       </motion.div>
 
-      {/* Floating Horizontal Scroll Cards */}
+      {/* Floating Horizontal Scroll Cards with visible scrollbar */}
       <motion.div
-        className="mt-16 w-full overflow-x-auto whitespace-nowrap scrollbar-hide"
+        className="mt-16 w-full overflow-x-auto whitespace-nowrap border-t border-white/20 py-4 scrollbar-thumb-accent scrollbar-track-transparent scrollbar-thin"
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true }}
@@ -91,4 +91,3 @@ export default function Home() {
     </section>
   );
 }
-

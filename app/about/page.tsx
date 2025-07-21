@@ -1,8 +1,27 @@
 'use client';
 
+import { useState } from 'react';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 import ModernButton from '../../components/ModernButton';
+
+function ReadMore({ children }: { children: string }) {
+  const [isExpanded, setIsExpanded] = useState(false);
+  const preview = children.slice(0, 150);
+
+  return (
+    <p
+      onClick={() => setIsExpanded(!isExpanded)}
+      className="mt-4 max-w-xl mx-auto text-text-secondary text-base md:text-lg leading-relaxed cursor-pointer select-text"
+      title="Click to expand/collapse"
+    >
+      {isExpanded ? children : `${preview}... `}
+      <span className="text-accent-1 font-semibold underline ml-1">
+        {isExpanded ? 'Read less' : 'Read more'}
+      </span>
+    </p>
+  );
+}
 
 export default function Home() {
   return (
@@ -39,21 +58,21 @@ export default function Home() {
           Computer Scientist · Risk Analyst · Developer
         </p>
 
-        <p className="mt-3 max-w-xl mx-auto text-text-secondary text-base md:text-lg leading-relaxed">
+        <ReadMore>
           I'm a driven computer science student with solid hands-on experience in cybersecurity, risk analysis, and full-stack application development. My focus is on creating practical solutions that tackle real-world problems—always learning, building, and improving along the way.
-        </p>
+        </ReadMore>
 
-        <p className="mt-6 max-w-xl mx-auto text-text-secondary text-base md:text-lg leading-relaxed">
+        <ReadMore>
           Balancing technical expertise with leadership, I serve as a Resident Assistant at Kean University, where I foster community, mentor residents, and keep detailed notes on their progress and interests. This role has sharpened my communication skills and ability to stay organized under pressure.
-        </p>
+        </ReadMore>
 
-        <p className="mt-4 max-w-xl mx-auto text-text-secondary text-base md:text-lg leading-relaxed">
+        <ReadMore>
           I’m passionate about cybersecurity challenges and risk management, constantly diving into new tools and frameworks to stay ahead of industry trends. Whether working on a risk analysis internship or developing a fitness app with my team, I’m motivated by the impact thoughtful technology can have.
-        </p>
+        </ReadMore>
 
-        <p className="mt-4 max-w-xl mx-auto text-text-secondary text-base md:text-lg leading-relaxed">
+        <ReadMore>
           Outside of tech, I enjoy hiking local trails, experimenting with the latest gadgets, and exploring topics in psychology and leadership. These interests fuel my growth mindset and inspire me to approach problems creatively and collaboratively.
-        </p>
+        </ReadMore>
 
         <div className="mt-10 flex flex-col sm:flex-row justify-center gap-4">
           <ModernButton
