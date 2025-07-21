@@ -122,7 +122,7 @@ const HeroSection = () => (
                 Computer Scientist · Risk Analyst · Developer
             </p>
             <p className="mt-6 text-base md:text-lg text-foreground/80 leading-relaxed max-w-2xl mx-auto">
-                I'm a driven computer science student with practical experience in threat detection,
+                I&apos;m a driven computer science student with practical experience in threat detection,
                 risk management, and full-stack development. I build clean, scalable solutions—and I
                 never stop learning.
             </p>
@@ -187,7 +187,7 @@ const AboutSection = () => (
        As a Computer Science student at Kean University, I specialize in cybersecurity and risk analysis. I have hands-on experience from internships at the NJ Department of the Treasury and ETS, where I honed my skills in threat detection, data management, and strategic planning.
       </p>
       <p className="text-foreground/80">
-       I'm passionate about creating elegant solutions to complex problems, from developing threat analysis tools to building full-stack applications. I'm constantly learning new technologies to stay at the forefront of the ever-evolving tech landscape.
+       I&apos;m passionate about creating elegant solutions to complex problems, from developing threat analysis tools to building full-stack applications. I&apos;m constantly learning new technologies to stay at the forefront of the ever-evolving tech landscape.
       </p>
       <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center md:justify-start">
        <a href="#contact" className="cosmic-button">
@@ -264,7 +264,7 @@ const ContactSection = () => (
     <footer id="contact" className="py-16 px-4 border-t border-border">
         <div className="container mx-auto max-w-5xl text-center">
             <h2 className="text-2xl md:text-3xl font-bold mb-4">Get In Touch</h2>
-            <p className="text-foreground/80 max-w-lg mx-auto mb-8">I'm currently seeking new opportunities and am open to collaboration. Feel free to reach out.</p>
+            <p className="text-foreground/80 max-w-lg mx-auto mb-8">I&apos;m currently seeking new opportunities and am open to collaboration. Feel free to reach out.</p>
             <a href="mailto:james.ford.dev@email.com" className="cosmic-button text-lg">Say Hello</a>
             <div className="flex justify-center gap-6 mt-12">
                 <a href="#" className="text-foreground/60 hover:text-primary transition-colors"><GithubIcon /></a>

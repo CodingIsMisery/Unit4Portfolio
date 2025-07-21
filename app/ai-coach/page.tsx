@@ -90,7 +90,7 @@ Stay conversational and helpful, but also clear, confident, and informative. Eac
 
       {aiResponse && (
         <div className="mt-6 p-6 bg-[var(--background-light)] border border-green-500/20 rounded-lg box-glow">
-          <h2 className="text-xl font-semibold text-[var(--accent-green)] mb-2 text-glow">Analyst's Response:</h2>
+          <h2 className="text-xl font-semibold text-[var(--accent-green)] mb-2 text-glow">Analyst&apos;s Response:</h2>
           <p className="text-[var(--text-primary)] whitespace-pre-wrap leading-relaxed">{aiResponse}</p>
         </div>
       )}
